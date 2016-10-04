@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JayShop-manager-service:war exploded">
+    <output-path>$PROJECT_DIR$/JayShop-manager/JayShop-manager-service/target/JayShop-manager-service</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JayShop-manager-service" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/JayShop-manager/JayShop-manager-service/target/JayShop-manager-service/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="JayShop-manager-service/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JayShop-manager-service:war">
+    <output-path>$PROJECT_DIR$/JayShop-manager/JayShop-manager-service/target</output-path>
+    <root id="archive" name="JayShop-manager-service.war">
+      <element id="artifact" artifact-name="JayShop-manager-service:war exploded" />
+    </root>
+  </artifact>
+</component>
