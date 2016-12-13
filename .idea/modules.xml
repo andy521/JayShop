@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JayShop-parent/JayShop.iml" filepath="$PROJECT_DIR$/JayShop-parent/JayShop.iml" />
       <module fileurl="file://$PROJECT_DIR$/JayShop-common/JayShop-common.iml" filepath="$PROJECT_DIR$/JayShop-common/JayShop-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/JayShop-manager/JayShop-manager.iml" filepath="$PROJECT_DIR$/JayShop-manager/JayShop-manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/JayShop-manager/JayShop-manager-mapper/JayShop-manager-mapper.iml" filepath="$PROJECT_DIR$/JayShop-manager/JayShop-manager-mapper/JayShop-manager-mapper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JayShop-manager/JayShop-manager-pojo/JayShop-manager-pojo.iml" filepath="$PROJECT_DIR$/JayShop-manager/JayShop-manager-pojo/JayShop-manager-pojo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/JayShop-manager/JayShop-manager-service/JayShop-manager-service.iml" filepath="$PROJECT_DIR$/JayShop-manager/JayShop-manager-service/JayShop-manager-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JayShop-manager/JayShop-manager-pojos/JayShop-manager-pojos.iml" filepath="$PROJECT_DIR$/JayShop-manager/JayShop-manager-pojos/JayShop-manager-pojos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JayShop-manager/JayShop-manager-services/JayShop-manager-services.iml" filepath="$PROJECT_DIR$/JayShop-manager/JayShop-manager-services/JayShop-manager-services.iml" />
       <module fileurl="file://$PROJECT_DIR$/JayShop-manager/JayShop-manager-web/JayShop-manager-web.iml" filepath="$PROJECT_DIR$/JayShop-manager/JayShop-manager-web/JayShop-manager-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JayShop-parent/JayShop.iml" filepath="$PROJECT_DIR$/JayShop-parent/JayShop.iml" />
     </modules>
   </component>
 </project>

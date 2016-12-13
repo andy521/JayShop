@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <modules>
-        <module>JayShop-manager-pojo</module>
-        <module>JayShop-manager-service</module>
         <module>JayShop-manager-web</module>
         <module>JayShop-manager-mapper</module>
+        <module>JayShop-manager-pojos</module>
+        <module>JayShop-manager-services</module>
     </modules>
     <parent>
         <groupId>JayShop</groupId>

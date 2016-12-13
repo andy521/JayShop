@@ -1,0 +1,11 @@
+com\JayShop\mapper\TbItemDescMapper.class
+com\JayShop\mapper\TbOrderItemMapper.class
+com\JayShop\mapper\TbItemCatMapper.class
+com\JayShop\mapper\TbItemParamItemMapper.class
+com\JayShop\mapper\TbItemParamMapper.class
+com\JayShop\mapper\TbContentCategoryMapper.class
+com\JayShop\mapper\TbContentMapper.class
+com\JayShop\mapper\TbOrderShippingMapper.class
+com\JayShop\mapper\TbItemMapper.class
+com\JayShop\mapper\TbOrderMapper.class
+com\JayShop\mapper\TbUserMapper.class

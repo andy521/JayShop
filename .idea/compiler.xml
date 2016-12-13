@@ -24,8 +24,8 @@
         <processorPath useClasspath="true" />
         <module name="JayShop-common" />
         <module name="JayShop-manager-mapper" />
-        <module name="JayShop-manager-pojo" />
-        <module name="JayShop-manager-service" />
+        <module name="JayShop-manager-pojos" />
+        <module name="JayShop-manager-services" />
         <module name="JayShop-manager-web" />
       </profile>
     </annotationProcessing>
@@ -35,7 +35,9 @@
       <module name="JayShop-manager" target="1.7" />
       <module name="JayShop-manager-mapper" target="1.7" />
       <module name="JayShop-manager-pojo" target="1.7" />
+      <module name="JayShop-manager-pojos" target="1.7" />
       <module name="JayShop-manager-service" target="1.7" />
+      <module name="JayShop-manager-services" target="1.7" />
       <module name="JayShop-manager-web" target="1.7" />
     </bytecodeTargetLevel>
   </component>
