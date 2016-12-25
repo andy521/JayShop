@@ -1,9 +1,12 @@
 package com.JayShop.service.impl;
 
+import com.JayShop.common.pojo.ListProductResult;
 import com.JayShop.mapper.TbItemMapper;
 import com.JayShop.pojo.TbItem;
 import com.JayShop.pojo.TbItemExample;
 import com.JayShop.service.ItemService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,5 +35,17 @@ public class ItemServiceImpl implements ItemService {
         }
         return null;
 
+    }
+
+    @Override
+    public ListProductResult<TbItem> getItemList(int page,int rows){
+        TbItemExample tbItemExample = new TbItemExample();
+        PageHelper.startPage(page,rows);
+        List<TbItem> list = tbItemMapper.selectByExample(tbItemExample);
+        ListProductResult listProductResult = new ListProductResult();
+        listProductResult.setRows(list);
+        PageInfo<TbItem> pageInfo = new PageInfo<>(list);
+        listProductResult.setTotal(pageInfo.getTotal());
+        return listProductResult;
     }
 }

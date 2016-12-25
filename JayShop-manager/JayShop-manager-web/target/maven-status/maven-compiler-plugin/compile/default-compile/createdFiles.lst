@@ -1,2 +1,3 @@
 com\JayShop\controller\PageController.class
+com\JayShop\controller\ItemCatController.class
 com\JayShop\controller\ItemController.class

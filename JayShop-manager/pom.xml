@@ -11,7 +11,7 @@
     </modules>
     <parent>
         <groupId>JayShop</groupId>
-        <artifactId>JayShop</artifactId>
+        <artifactId>JayShop-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../JayShop-parent/pom.xml</relativePath>
     </parent>

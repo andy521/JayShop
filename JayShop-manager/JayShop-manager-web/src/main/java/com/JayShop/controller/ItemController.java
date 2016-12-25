@@ -1,5 +1,6 @@
 package com.JayShop.controller;
 
+import com.JayShop.common.pojo.ListProductResult;
 import com.JayShop.pojo.TbItem;
 import com.JayShop.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,5 +23,12 @@ public class ItemController {
     public TbItem getItemById(@PathVariable("itemId")long id){
         TbItem tbItem = itemService.getTbitemById(id);
         return tbItem;
+    }
+
+    @RequestMapping(value = "/item/list")
+    @ResponseBody
+    public ListProductResult getItemList(int page,int rows){
+        ListProductResult result = itemService.getItemList(page,rows);
+        return result;
     }
 }
