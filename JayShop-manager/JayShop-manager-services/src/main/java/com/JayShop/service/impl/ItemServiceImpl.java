@@ -1,6 +1,8 @@
 package com.JayShop.service.impl;
 
 import com.JayShop.common.pojo.ListProductResult;
+import com.JayShop.common.utils.IDUtils;
+import com.JayShop.common.utils.TaotaoResult;
 import com.JayShop.mapper.TbItemMapper;
 import com.JayShop.pojo.TbItem;
 import com.JayShop.pojo.TbItemExample;
@@ -10,6 +12,7 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -47,5 +50,16 @@ public class ItemServiceImpl implements ItemService {
         PageInfo<TbItem> pageInfo = new PageInfo<>(list);
         listProductResult.setTotal(pageInfo.getTotal());
         return listProductResult;
+    }
+
+    @Override
+    public TaotaoResult createItem(TbItem tbItem) {
+        long id = IDUtils.genItemId();
+        tbItem.setId(id);
+        tbItem.setStatus(true);
+        tbItem.setCreated(new Date());
+        tbItem.setUpdated(new Date());
+        int rows = tbItemMapper.insert(tbItem);
+        return TaotaoResult.ok();
     }
 }

@@ -1,6 +1,7 @@
 package com.JayShop.controller;
 
 import com.JayShop.common.pojo.ListProductResult;
+import com.JayShop.common.utils.TaotaoResult;
 import com.JayShop.pojo.TbItem;
 import com.JayShop.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,5 +31,11 @@ public class ItemController {
     public ListProductResult getItemList(int page,int rows){
         ListProductResult result = itemService.getItemList(page,rows);
         return result;
+    }
+
+    @RequestMapping(value = "/item/save",method =  RequestMethod.POST)
+    @ResponseBody
+    public TaotaoResult createItem(TbItem tbItem){
+        return itemService.createItem(tbItem);
     }
 }
